@@ -45,5 +45,14 @@ describe('seed-navbar: component: collapse', function() {
       expect(o.prop('transition-duration')).to.exist;
       expect(o.prop('transition-property')).to.exist;
     });
+
+    it('should have Bootstrap overrides for md breakpoint', () => {
+      const o = output.rule('.c-navbar__item.collapse').at(['min', '768px']);
+
+      expect(o.prop('display')).to.equal('block')
+      expect(o.prop('height')).to.equal('auto')
+      expect(o.prop('overflow')).to.equal('visible')
+      expect(o.prop('padding-bottom')).to.equal('0')
+    });
   });
 });

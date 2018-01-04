@@ -11,8 +11,13 @@
       box-sizing: border-box;
       display: none;
 
+      // For Bootstrap
+      // https://github.com/twbs/bootstrap/blob/master/less/navbar.less#L68
       @include breakpoint(md) {
         display: block !important;
+        height: auto !important;
+        overflow: visible !important;
+        padding-bottom: 0; // Override default setting
       }
 
       // States
