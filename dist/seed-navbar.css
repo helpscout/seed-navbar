@@ -1,5 +1,5 @@
 /**
- * seed-navbar v0.0.6
+ * seed-navbar v0.0.7
  * Navbar component pack for Seed
  * Licensed under MIT
  */
@@ -883,7 +883,10 @@ button.c-button {
   display: none; }
   @media (min-width: 768px) {
     .c-navbar__item.collapse {
-      display: block !important; } }
+      display: block !important;
+      height: auto !important;
+      overflow: visible !important;
+      padding-bottom: 0; } }
   .c-navbar__item.collapse.in, .c-navbar__item.collapse.show {
     display: block; }
 
